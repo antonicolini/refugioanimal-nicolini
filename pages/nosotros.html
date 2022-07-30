@@ -10,62 +10,83 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <header>
-        <!-- NAV BAR -->
-        <nav>
-            <a href="../index.html"><img src="../img/logo-color.png" alt="logo-color"></a>
-            <ul>
-                <a href="../index.html">
-                    <li>Inicio</li>
-                </a>
-                <a href="./nosotros.html">
-                    <li>Quienes somos</li>
-                </a>
-                <a href="./refugio.html">
-                    <li>El refugio</li>
-                </a>
-                <a href="./adopciones.html">
-                    <li>Adopciones</li>
-                </a>
-                <a href="./contacto.html">
-                    <li>Contacto</li>
-                </a>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!-- QUIENES SOMOS -->
-        <section>
-            <p>Somos una entidad solidaria sin fines de lucro, creada en Buenos Aires, Argentina. Promovemos la tenencia
-                responsable de animales, procurando su bienestar.Consideramos que es nuestra obligación como especie,
-                respetarlos, protegerlos y asegurarles vidas dignas.</p>
-            <p>Por eso nuestra misión principal es rescatar animales en riesgo y darles un hogar seguro. Actualmente el
-                refugio cuenta con más de 300 animales rescatados. Muchos de ellos aún esperan un hogar. Nuestro Centro
-                de Adopciones está abierto a quienes estén buscando una mascota para amar y cuidar.</p>
-            <img src="" alt="mascota">
-        </section>
-        <!-- FUNDADORES -->
-        <section>
-            <h3>Nuestros Fundadores</h3>
-            <img src="../img/carla-libera.jpg" alt="carla-libera">
-            <p>Carla Libera - Presidente de la asociación</p>
-            <img src="../img/lucia-mendez.jpg" alt="lucia-mendez">
-            <p>Lucia Mendez - Co-fundadora y guía del refugio</p>
-            <img src="../img/lisandro-soto.jpg" alt="lisandro-soto">
-            <p>Lisandro Soto - Co-fundador y Veterinario</p>
-        </section>
-    </main>
-    <!-- FOOTER -->
-    <footer>z
-        <img src="../img/logo-blanco.png" alt="logo-blanco">
-        <p>© 2022 REFUGIO. refugio 2017 - Derechos Reservados</p>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
-    </footer>
+    <div class="grid-container-nosotros">
+        <header class="grid-section menu-bar">
+            <!-- NAV BAR -->
+            <nav class="nav-bar">
+                <a href="../index.html"><img src="../img/logo-color.png" alt="logo-color"></a>
+                <ul>
+                    <a href="../index.html">
+                        <li>Inicio</li>
+                    </a>
+                    <a href="./nosotros.html">
+                        <li>Quienes somos</li>
+                    </a>
+                    <a href="./refugio.html">
+                        <li>El refugio</li>
+                    </a>
+                    <a href="./adopciones.html">
+                        <li>Adopciones</li>
+                    </a>
+                    <a href="./contacto.html">
+                        <li>Contacto</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        <main class="grid-section quienes-somos">
+            <!-- QUIENES SOMOS -->
+            <section class="us">
+                <p>Somos una entidad solidaria sin fines de lucro, creada en Buenos Aires, Argentina. Promovemos la
+                    tenencia
+                    responsable de animales, procurando su bienestar.Consideramos que es nuestra obligación como
+                    especie,
+                    respetarlos, protegerlos y asegurarles vidas dignas.
+                    <br>
+                    Por eso nuestra misión principal es rescatar animales en riesgo y darles un hogar seguro.
+                    Actualmente
+                    el
+                    refugio cuenta con más de 300 animales rescatados. Muchos de ellos aún esperan un hogar. Nuestro
+                    Centro
+                    de Adopciones está abierto a quienes estén buscando una mascota para amar y cuidar.
+                </p>
+                <img src="../img/saltarin.jpg" alt="mascota">
+            </section>
+            <!-- FUNDADORES -->
+            <section class="fundadores">
+                <h3>Nuestros Fundadores</h3>
+                <div class="box-fundador">
+                    <div>
+                        <img src="../img/carla-libera.jpg" alt="carla-libera">
+                        <p>Carla Libera - Presidente de la asociación</p>
+                    </div>
+                    <div>
+                        <img src="../img/lucia-mendez.jpg" alt="lucia-mendez">
+                        <p>Lucia Mendez - Co-fundadora y guía del refugio</p>
+                    </div>
+                    <div>
+                        <img src="../img/lisandro-soto.jpg" alt="lisandro-soto">
+                        <p>Lisandro Soto - Co-fundador y Veterinario</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- FOOTER -->
+        <footer class="grid-section footer">
+            <img src="../img/logo-blanco.png" alt="logo-blanco">
+            <p>© 2022 REFUGIO. refugio 2017 - Derechos Reservados</p>
+            <div class="logo-redes">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>

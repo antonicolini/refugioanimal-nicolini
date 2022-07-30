@@ -8,7 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300&display=swap');
 
 /* GRID LAYOUT */
-.grid-container {
+.grid-container-index {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 0.4fr 20fr 0.4fr;
@@ -18,7 +18,7 @@
         "footer";
 }
 
-/* --------------------------HEADER INDEX------------------------ */
+/* --------------------------HEADER------------------------ */
 .menu-bar {
     grid-area: nav-bar;
     background-color: #8ECAE6;
@@ -58,7 +58,8 @@
     list-style: none;
 }
 
-/* -------------------------------MAIN INDEX--------------------------- */
+/* ------------------------------INDEX PAGE--------------------------- */
+/* ------------------------------INDEX PAGE--------------------------- */
 .main-index {
     grid-area: main-index;
 }
@@ -123,12 +124,14 @@
     text-decoration: none;
     color: #f8f7ff;
 }
+
 .ley-index {
     height: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .ley-animal {
     background-color: #219EBC;
     color: #f8f7ff;
@@ -138,26 +141,31 @@
     align-items: center;
     border-radius: 10px;
 }
+
 .ley-animal h3 {
     font-family: 'Lato', sans-serif;
     font-size: 40px;
     padding: 20px;
 }
+
 .ley-animal p {
     font-family: 'Lato', sans-serif;
     font-size: 25px;
     padding: 30px;
 }
+
 .bloque-donaciones {
     display: flex;
     width: 70%;
     height: 200px;
     justify-content: space-around;
 }
+
 .bloque-donaciones img {
     width: 130px;
     height: 130px;
 }
+
 .item-donaciones {
     display: flex;
     flex-direction: column;
@@ -167,46 +175,108 @@
     background-color: #023047;
     border-radius: 50%;
 }
+
 .item-donaciones a {
     text-decoration: none;
-    color:  #cad8df;
+    color: #cad8df;
     padding-top: 20px;
     font-family: 'Lato', sans-serif;
     font-size: 20px;
     font-weight: 700;
 }
+
 .instagram {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .instagram h3 {
     font-family: 'Lato', sans-serif;
     font-size: 30px;
     margin: 10px;
 }
+
 .instagram h4 {
     font-family: 'Lato', sans-serif;
     font-size: 20px;
     margin: 20px;
     padding-bottom: 40px;
 }
+
 .instagram img {
     width: 400px;
     height: 400px;
     padding-bottom: 50px;
 }
+
 .fotos-instagram {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    
+
 
 }
+/* ------------------------------NOSOTROS PAGE--------------------------- */
+/* ------------------------------NOSOTROS PAGE--------------------------- */
+/* .grid-container-nosotros {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 800px 0.4fr;
+} */
+.us {
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.us p {
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    margin: 20px;
+}
+.us img {
+    width: 500px;
+    height: 300px;
+    margin: 20px;
+}
+.fundadores h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.fundadores img{
+    width: 200px;
+    height: 300px;
+    border-radius: 5%;
+}
+.box-fundador {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.box-fundador div {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #cfe1e9;
+    border-radius: 8%;
+    margin-bottom: 40px;
 
+}
+.box-fundador p {
+    font-family: 'Lato', sans-serif;
+    color: #023047;
+    font-size: 18px;
+}
 
-/* ------------------------------FOOTER INDEX-------------------------- */
+/* ------------------------------FOOTER-------------------------- */
 .footer {
     grid-area: footer;
     background-color: #8ECAE6;
