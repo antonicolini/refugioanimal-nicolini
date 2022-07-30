@@ -148,16 +148,32 @@
     font-size: 25px;
     padding: 30px;
 }
-/* QUIERO APLICAR FLEX ACA PERO NO ME SALE, REVISAR */
-.img-donar {
+.bloque-donaciones {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: aqua;
+    width: 70%;
+    height: 200px;
+    justify-content: space-around;
 }
-.img-donar div img {
-    width: 100px;
-    height: 100px;
+.bloque-donaciones img {
+    width: 130px;
+    height: 130px;
+}
+.item-donaciones {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    background-color: #023047;
+    border-radius: 50%;
+}
+.item-donaciones a {
+    text-decoration: none;
+    color:  #cad8df;
+    padding-top: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
 }
 .instagram {
     display: flex;
