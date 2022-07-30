@@ -223,7 +223,14 @@
 /* .grid-container-nosotros {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100px 800px 0.4fr;
+    grid-template-rows: 0.4fr 1fr 0.4fr;
+    grid-template-areas: 
+    "menu-bar"
+    "quienes-somos"
+    "footer";
+}
+.quienes-somos {
+    grid-area: quienes-somos;
 } */
 .us {
     height: 600px;
@@ -275,7 +282,34 @@
     color: #023047;
     font-size: 18px;
 }
-
+/* ------------------------------REFUGIO PAGE--------------------------- */
+/* ------------------------------REFUGIO PAGE--------------------------- */
+.info-refugio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info-refugio p {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    margin: 30px;
+}
+.info-refugio iframe {
+    width: 80%;
+    height: 650px;
+    margin-bottom: 60px;
+}
+.animales {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.animales img {
+    width: 200px;
+    height: 200px;
+}
 /* ------------------------------FOOTER-------------------------- */
 .footer {
     grid-area: footer;
