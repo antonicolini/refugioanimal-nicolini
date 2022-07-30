@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300&display=swap');
+
+/* GRID LAYOUT */
+.grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.4fr 20fr 0.4fr;
+    grid-template-areas:
+        "nav-bar"
+        "main-index"
+        "footer";
+}
+
+/* --------------------------HEADER INDEX------------------------ */
+.menu-bar {
+    grid-area: nav-bar;
+    background-color: #8ECAE6;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar img {
+    width: 70px;
+    height: 70px;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-bar ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-bar ul a {
+    text-decoration: none;
+    color: #f8f7ff;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 18px;
+}
+
+.nav-bar ul li {
+    list-style: none;
+}
+
+/* -------------------------------MAIN INDEX--------------------------- */
+.main-index {
+    grid-area: main-index;
+}
+
+.banner {
+    background-image: url(../img/portada.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 20px 1fr 1fr 2fr;
+    grid-template-rows: 20px 100px 100px 80px 80px 80px;
+    gap: 5px;
+}
+
+.banner h1 {
+    font-size: 70px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-top: 12px;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    background-color: #8ecae63b;
+    color: #023047;
+}
+
+.banner h2 {
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+    padding-left: 20px;
+    padding-top: 30px;
+    grid-column: 2/4;
+    grid-row: 3/4;
+    background-color: #8ecae63b;
+    color: #023047;
+}
+
+.banner p {
+    font-size: 26px;
+    font-family: 'Lato', sans-serif;
+    padding-left: 20px;
+    padding-top: 25px;
+    grid-column: 2/4;
+    grid-row: 4/5;
+    background-color: #8ecae63b;
+    color: #f8f7ff;
+}
+
+.banner a {
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    grid-column: 2/3;
+    grid-row: 6/7;
+    background-color: #219EBC;
+    border-radius: 10px;
+    width: 50%;
+    padding-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #f8f7ff;
+}
+.ley-index {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ley-animal {
+    background-color: #219EBC;
+    color: #f8f7ff;
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.ley-animal h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    padding: 20px;
+}
+.ley-animal p {
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    padding: 30px;
+}
+/* QUIERO APLICAR FLEX ACA PERO NO ME SALE, REVISAR */
+.img-donar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: aqua;
+}
+.img-donar div img {
+    width: 100px;
+    height: 100px;
+}
+.instagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.instagram h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    margin: 10px;
+}
+.instagram h4 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    margin: 20px;
+    padding-bottom: 40px;
+}
+.instagram img {
+    width: 400px;
+    height: 400px;
+    padding-bottom: 50px;
+}
+.fotos-instagram {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+
+}
+
+
+/* ------------------------------FOOTER INDEX-------------------------- */
+.footer {
+    grid-area: footer;
+    background-color: #8ECAE6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer img {
+    width: 40px;
+    height: 40px;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.logo-redes i {
+    font-size: 35px;
+    padding: 10px;
+}
