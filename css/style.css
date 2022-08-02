@@ -21,7 +21,7 @@
 /* --------------------------HEADER------------------------ */
 .menu-bar {
     grid-area: menu-bar;
-    background-color: #8ECAE6;
+    background-color: #8FBDD3;
 }
 
 .nav-bar {
@@ -53,6 +53,9 @@
     text-transform: uppercase;
     padding: 18px;
 }
+.nav-bar ul a:hover {
+    color: #023047;
+}
 
 .nav-bar ul li {
     list-style: none;
@@ -62,6 +65,7 @@
 /* ------------------------------INDEX PAGE--------------------------- */
 .main-index {
     grid-area: main-index;
+    
 }
 
 .banner {
@@ -123,6 +127,23 @@
     text-align: center;
     text-decoration: none;
     color: #f8f7ff;
+    
+}
+.banner a:hover {
+    animation: donar 4s;
+}
+@keyframes donar {
+    0%{
+        background-color: #023047;
+        color: #8ECAE6;
+        transform: scale(1.2);
+
+    }
+    25% {
+        background-color: #023047;
+        color: #8ECAE6;
+        transform: scale(1);
+    }
 }
 
 .ley-index {
@@ -130,6 +151,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: rgb(143,189,211);
+background: linear-gradient(180deg, rgba(143,189,211,1) 0%, rgba(255,255,255,0.36738445378151263) 100%);
+    
 }
 
 .ley-animal {
@@ -175,6 +199,27 @@
     background-color: #023047;
     border-radius: 50%;
 }
+.item-donaciones:hover {
+    animation: item 8s;
+}
+@keyframes item {
+    0%{
+        border-radius: 42%;
+    }
+    25% {
+        border-radius: 32%;
+    }
+    50%{
+        border-radius: 25%;
+    }
+    75% {
+        border-radius: 20%;
+    }
+    100% {
+        border-radius: 10%;
+    }
+
+}
 
 .item-donaciones a {
     text-decoration: none;
@@ -209,14 +254,14 @@
     height: 400px;
     padding-bottom: 50px;
 }
-
+.instagram img:hover {
+    transform: scale(1.2);
+}
 .fotos-instagram {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
-
 }
 /* ------------------------------NOSOTROS PAGE--------------------------- */
 /* ------------------------------NOSOTROS PAGE--------------------------- */
@@ -231,6 +276,7 @@
 }
 .quienes-somos {
     grid-area: quienes-somos;
+    
 }
 .us {
     height: 600px;
@@ -260,6 +306,7 @@
     height: 300px;
     border-radius: 5%;
 }
+
 .box-fundador {
     display: flex;
     flex-direction: row;
@@ -274,11 +321,10 @@
     align-items: center;
     justify-content: space-evenly;
     background-color: #cfe1e9;
-
     border-radius: 8%;
     margin-bottom: 40px;
-
 }
+
 .box-fundador p {
     font-family: 'Lato', sans-serif;
     color: #023047;
@@ -386,6 +432,10 @@
     border-radius: 3px;
     color: #cad8df;
 }
+.box-adoptar a:hover {
+    background-color: #219EBC;
+}
+
 /* ------------------------------CONTACTO PAGE--------------------------- */
 /* ------------------------------CONTACTO PAGE--------------------------- */
 .grid-container-contacto {
@@ -403,7 +453,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #219EBC;
+    background-color: #2777a0;
     height: 830px;
 }
 .map {
@@ -423,6 +473,10 @@
     flex-direction: row;
     justify-content: space-around;
 }
+.map div:hover {
+    color: #023047;
+}
+
 .form {
     margin: 30px;
     color: #cad8df;
@@ -456,6 +510,9 @@
 .logo-redes i {
     font-size: 35px;
     padding: 10px;
+}
+.logo-redes i:hover{
+    color: #2777a0;
 }
 
 /* ------------------------------MEDIA QUERIES-------------------------- */
