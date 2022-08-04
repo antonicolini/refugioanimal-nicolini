@@ -460,7 +460,7 @@ background: linear-gradient(180deg, rgba(143,189,211,1) 0%, rgba(255,255,255,0.3
 .grid-container-contacto {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 90px 1fr 80px;
+    grid-template-rows: 110px 1fr 80px;
     grid-template-areas:
     "menu-bar"
     "main-contacto"
@@ -472,6 +472,7 @@ background: linear-gradient(180deg, rgba(143,189,211,1) 0%, rgba(255,255,255,0.3
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    background-color: #5a99b6;
     /* background-image: url(../img/bg-color.jpg);
     background-size: contain; */
     height: 830px;
@@ -640,9 +641,9 @@ background: linear-gradient(180deg, rgba(143,189,211,1) 0%, rgba(255,255,255,0.3
         align-items: flex-start;
     }
 }
-@media screen and (max-width: 818px ) {
+@media screen and (max-width: 991px ) {
     .grid-container-adopciones {
-        grid-template-rows: 320px 1fr 80px;
+        grid-template-rows: 420px 1fr 80px;
     }
     .box-adoptar {
         flex-direction: column;
@@ -666,4 +667,9 @@ background: linear-gradient(180deg, rgba(143,189,211,1) 0%, rgba(255,255,255,0.3
         height: 200px;
     }
     
+}
+@media screen and (max-width: 991px ) {
+    .grid-container-contacto {
+        grid-template-rows: 420px 1fr 80px;
+    }
 }

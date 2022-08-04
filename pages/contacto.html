@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -18,7 +21,36 @@
     <div class="grid-container-contacto">
         <header class="grid-section menu-bar">
             <!-- NAV BAR -->
-            <nav class="nav-bar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html"><img src="../img/logo-color.png" alt="logo-color"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./nosotros.html">Quienes somos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./refugio.html">El refugio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./adopciones.html">Adopciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- <nav class="nav-bar">
                 <a href="../index.html"><img src="../img/logo-color.png" alt="logo-color"></a>
                 <ul>
                     <a href="../index.html">
@@ -37,7 +69,7 @@
                         <li>Contacto</li>
                     </a>
                 </ul>
-            </nav>
+            </nav> -->
         </header>
         <main class="grid-section main-contacto">
             <section class="map">
@@ -55,7 +87,31 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
             <section>
-                <form class="form"> 
+                <form class="row g-3">
+                    <div class="col-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="name" class="form-control" placeholder="Mateo">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Mateo@gmail.com">
+                    </div>
+                    <div class="col-3">
+                        <label for="telefono" class="form-label">Telefono</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="1124653487">
+                    </div>
+                    <div class="col-9">
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Hola! me gustaria adoptar un perrito...</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </div>
+                </form>
+                <!--                 <form class="form"> 
                     <h3>Dejanos tu consulta y te contactamos nosotros!!</h3>
                     <div>
                         <label for="name">Nombre y Apellido</label>
@@ -71,7 +127,7 @@
                         <textarea cols="40" rows="10"
                             placeholder="Hola! Me gustaria saber como apadrinar un perrito.."></textarea>
                         <button>Enviar</button>
-                </form>
+                </form> -->
             </section>
         </main>
         <!-- FOOTER -->
@@ -85,6 +141,10 @@
             </div>
         </footer>
     </div>
+    <!-- JS BOOSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
