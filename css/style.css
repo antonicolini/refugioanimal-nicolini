@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .navbar .navbar-brand img {
+    width: 70px;
+    height: 70px;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .navbar .navbar-nav {
+    display: flex;
+    flex-direction: row; }
+    .navbar .navbar-nav .navbar-item {
+      list-style: none; }
+      .navbar .navbar-nav .navbar-item .nav-link {
+        text-decoration: none;
+        color: #f8f7ff;
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 18px; }
+        .navbar .navbar-nav .navbar-item .nav-link:hover {
+          color: #023047; }
+
+.footer {
+  grid-area: footer;
+  background-color: #8ECAE6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .footer img {
+    width: 40px;
+    height: 40px;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .footer .logo-redes i {
+    font-size: 35px;
+    padding: 10px; }
+    .footer .logo-redes i:hover {
+      color: #2777a0; }
