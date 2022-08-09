@@ -606,7 +606,10 @@
     }
 
     .grid-container-index {
-        grid-template-rows: 420px 1fr 80px;
+        grid-template-rows: 110px 1fr 80px;
+    }
+    .navbar{
+        background: #8FBDD3;
     }
 
 }
@@ -708,7 +711,7 @@
 
 @media screen and (max-width: 991px) {
     .grid-container-nosotros {
-        grid-template-rows: 420px 1fr 80px;
+        grid-template-rows: 110px 1fr 80px;
     }
 }
 
@@ -739,7 +742,7 @@
 /* REFUGIO PAGE */
 @media screen and (max-width: 991px) {
     .grid-container-refugio {
-        grid-template-rows: 420px 1fr 80px;
+        grid-template-rows: 110px 1fr 80px;
     }
 
     .info-refugio iframe {
@@ -758,7 +761,7 @@
 
 @media screen and (max-width: 991px) {
     .grid-container-adopciones {
-        grid-template-rows: 420px 1fr 80px;
+        grid-template-rows: 110px 1fr 80px;
     }
 
     .box-adoptar {
@@ -790,6 +793,6 @@
 
 @media screen and (max-width: 991px) {
     .grid-container-contacto {
-        grid-template-rows: 420px 1fr 80px;
+        grid-template-rows: 110px 1fr 80px;
     }
 }
