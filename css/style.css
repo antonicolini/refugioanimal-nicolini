@@ -608,7 +608,8 @@
     .grid-container-index {
         grid-template-rows: 110px 1fr 80px;
     }
-    .navbar{
+
+    .navbar {
         background: #8FBDD3;
     }
 
@@ -674,10 +675,6 @@
         display: none;
     }
 
-    .instagram {
-        display: none;
-    }
-
     .bloque-donaciones {
         height: 1000px;
     }
@@ -686,6 +683,12 @@
         font-size: 50px;
     }
 
+}
+
+@media screen and (max-width: 480px) {
+    .instagram {
+        display: none;
+    }
 }
 
 /* NOSOTROS PAGE */
@@ -731,9 +734,11 @@
         width: 160px;
         height: 250px;
     }
+
     .card {
         height: 350px;
     }
+
     .us p {
         font-size: 20px;
     }
