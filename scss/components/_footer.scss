@@ -1,6 +1,6 @@
 .footer {
     grid-area: footer;
-    background-color: #8ECAE6;
+    background-color: $color-celeste-claro;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -16,7 +16,7 @@
         font-size: 35px;
         padding: 10px;
         &:hover {
-            color: #2777a0;
+            color: $color-celeste;
         }
     }
 

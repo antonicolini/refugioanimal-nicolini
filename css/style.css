@@ -4,6 +4,15 @@
   padding: 0;
   box-sizing: border-box; }
 
+.grid-container-index {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 110px 1fr 80px;
+  grid-template-areas: "menu-bar" "main-index" "footer"; }
+  .grid-container-index .menu-bar {
+    grid-area: menu-bar;
+    background-color: #8FBDD3; }
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -17,19 +26,12 @@
     margin-bottom: 10px; }
   .navbar .navbar-nav {
     display: flex;
-    flex-direction: row; }
-    .navbar .navbar-nav .navbar-item {
-      list-style: none; }
-      .navbar .navbar-nav .navbar-item .nav-link {
-        text-decoration: none;
-        color: #f8f7ff;
-        font-family: 'Lato', sans-serif;
-        font-size: 18px;
-        font-weight: 700;
-        text-transform: uppercase;
-        padding: 18px; }
-        .navbar .navbar-nav .navbar-item .nav-link:hover {
-          color: #023047; }
+    flex-direction: row;
+    color: #f8f7ff;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase; }
 
 .footer {
   grid-area: footer;
@@ -48,4 +50,142 @@
     font-size: 35px;
     padding: 10px; }
     .footer .logo-redes i:hover {
-      color: #2777a0; }
+      color: #219EBC; }
+
+.banner {
+  background-image: url(../img/portada.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  display: grid;
+  grid-template-columns: 20px 1fr 1fr 2fr;
+  grid-template-rows: 20px 100px 100px 80px 80px 80px;
+  gap: 5px; }
+  .banner h1 {
+    font-size: 70px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-top: 12px;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    background-color: #8ecae63b;
+    color: #023047; }
+  .banner h2 {
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+    padding-left: 20px;
+    padding-top: 30px;
+    grid-column: 2/4;
+    grid-row: 3/4;
+    background-color: #8ecae63b;
+    color: #023047; }
+  .banner p {
+    font-size: 26px;
+    font-family: 'Lato', sans-serif;
+    padding-left: 20px;
+    padding-top: 25px;
+    grid-column: 2/4;
+    grid-row: 4/5;
+    background-color: #8ecae63b;
+    color: #f8f7ff; }
+  .banner a {
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    grid-column: 2/3;
+    grid-row: 6/7;
+    background-color: #219EBC;
+    border-radius: 10px;
+    width: 50%;
+    padding-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #f8f7ff; }
+    .banner a:hover {
+      animation: donar 4s; }
+
+@keyframes donar {
+  0% {
+    background-color: #023047;
+    color: #8ECAE6;
+    transform: scale(1.2); }
+  25% {
+    background-color: #023047;
+    color: #8ECAE6;
+    transform: scale(1); } }
+
+.ley-index {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #8fbdd3;
+  background: linear-gradient(180deg, #8fbdd3 0%, rgba(255, 255, 255, 0.367384) 100%); }
+  .ley-index .ley-animal {
+    background-color: #219EBC;
+    color: #f8f7ff;
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px; }
+    .ley-index .ley-animal h3 {
+      font-family: 'Lato', sans-serif;
+      font-size: 40px;
+      padding: 20px; }
+    .ley-index .ley-animal p {
+      font-family: 'Lato', sans-serif;
+      font-size: 25px;
+      padding: 30px; }
+  .ley-index .bloque-donaciones {
+    display: flex;
+    width: 70%;
+    height: 200px;
+    justify-content: space-around; }
+    .ley-index .bloque-donaciones .item-donaciones {
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%; }
+      .ley-index .bloque-donaciones .item-donaciones img {
+        width: 130px;
+        height: 130px; }
+      .ley-index .bloque-donaciones .item-donaciones a {
+        text-decoration: none;
+        color: #023047;
+        padding-top: 20px;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        font-weight: 700; }
+        .ley-index .bloque-donaciones .item-donaciones a:hover {
+          color: #5a99b6; }
+
+.instagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .instagram h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    margin: 10px; }
+  .instagram h4 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    margin: 20px;
+    padding-bottom: 40px; }
+  .instagram img {
+    width: 400px;
+    height: 400px;
+    padding-bottom: 50px; }
+    .instagram img:hover {
+      transform: scale(1.2);
+      transition: 1s; }
+  .instagram .fotos-instagram {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }

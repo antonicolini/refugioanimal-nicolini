@@ -1,0 +1,14 @@
+.grid-container-index {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 110px 1fr 80px;
+    grid-template-areas:
+        "menu-bar"
+        "main-index"
+        "footer";
+
+    .menu-bar {
+        grid-area: menu-bar;
+        background-color: #8FBDD3;
+    }
+}

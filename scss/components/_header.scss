@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
     .navbar-brand {
         img {
             width: 70px;
@@ -12,33 +13,14 @@
             margin-bottom: 10px;
         }
     }
+
     .navbar-nav {
         display: flex;
         flex-direction: row;
-        .navbar-item {
-            list-style: none;
-            .nav-link {
-                text-decoration: none;
-                color: #f8f7ff;
-                font-family: 'Lato', sans-serif;
-                font-size: 18px;
-                font-weight: 700;
-                text-transform: uppercase;
-                padding: 18px;
-                &:hover {
-                    color: #023047;
-                }
-            }
-        }
-
+        color: $color-blanco;
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
     }
-    
 }
-
-
-
-
-
-
-
-
