@@ -323,34 +323,37 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: auto;
   height: 800px;
   margin: 30px;
   gap: 10px;
   flex-wrap: wrap; }
-  .box-adoptar div img {
-    width: 330px;
-    height: 400px; }
-  .box-adoptar div div {
-    width: 400px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: 15px; }
-    .box-adoptar div div p {
-      font-family: 'Lato', sans-serif;
-      font-size: 20px; }
-    .box-adoptar div div a {
-      text-decoration: none;
-      font-family: 'Lato', sans-serif;
-      font-size: 20px;
-      background-color: #023047;
-      width: fit-content;
-      border-radius: 3px;
-      color: #cad8df; }
-      .box-adoptar div div a:hover {
-        background-color: #219EBC; }
+  .box-adoptar .card {
+    width: 330px; }
+    .box-adoptar .card img {
+      width: 330px;
+      height: 400px; }
+    .box-adoptar .card .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      text-align: center;
+      align-items: center; }
+      .box-adoptar .card .card-body p {
+        font-family: 'Lato', sans-serif;
+        font-size: 20px; }
+      .box-adoptar .card .card-body a {
+        text-decoration: none;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        background-color: #023047;
+        width: fit-content;
+        border-radius: 3px;
+        color: #cad8df; }
+        .box-adoptar .card .card-body a:hover {
+          background-color: #219EBC; }
 
+/* Contacto Page */
 .map {
   display: flex;
   flex-direction: column-reverse;

@@ -291,55 +291,63 @@
         font-size: 30px;
         margin: 30px;
     }
+
     p {
         font-family: 'Lato', sans-serif;
         font-size: 20px;
         margin-left: 30px;
     }
 }
+
 .box-adoptar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: auto;
     height: 800px;
     margin: 30px;
     gap: 10px;
     flex-wrap: wrap;
-    div img {
+    .card {
         width: 330px;
-        height: 400px;
-    }
-    div div {
-        width: 400px;
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin: 15px;
-        p {
-            font-family: 'Lato', sans-serif;
-            font-size: 20px;
+        img {
+            width: 330px;
+            height: 400px;
         }
-        a {
-            text-decoration: none;
-            font-family: 'Lato', sans-serif;
-            font-size: 20px;
-            background-color: #023047;
-            width: fit-content;
-            border-radius: 3px;
-            color: #cad8df;
-            &:hover {
-                background-color: #219EBC;
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: center;
+            align-items: center;
+            p {
+                font-family: 'Lato', sans-serif;
+                font-size: 20px;
+            }
+            a {
+                text-decoration: none;
+                font-family: 'Lato', sans-serif;
+                font-size: 20px;
+                background-color: #023047;
+                width: fit-content;
+                border-radius: 3px;
+                color: #cad8df;
+                &:hover {
+                    background-color: #219EBC;
+                }
             }
         }
     }
     
 }
+
+/* Contacto Page */
 .map {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     margin: 20px;
+
     div {
         font-family: 'Lato', sans-serif;
         font-size: 18px;
@@ -349,14 +357,17 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+
         &:hover {
             color: #023047;
         }
     }
 
 }
+
 .formulario {
     color: #cad8df;
+
     h3 {
         font-family: 'Lato', sans-serif;
         font-size: 30px;
