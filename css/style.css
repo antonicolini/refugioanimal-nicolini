@@ -9,9 +9,54 @@
   grid-template-columns: 100%;
   grid-template-rows: 110px 1fr 80px;
   grid-template-areas: "menu-bar" "main-index" "footer"; }
-  .grid-container-index .menu-bar {
-    grid-area: menu-bar;
-    background-color: #8FBDD3; }
+
+.menu-bar {
+  grid-area: menu-bar;
+  background-color: #8FBDD3; }
+
+.grid-container-nosotros {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 110px 1fr 80px;
+  grid-template-areas: "menu-bar" "quienes-somos" "footer"; }
+
+.quienes-somos {
+  grid-area: quienes-somos;
+  background-image: url(../img/pattern.jpg);
+  background-size: contain; }
+
+.grid-container-refugio {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 110px 1fr 80px;
+  grid-template-areas: "menu-bar" "main-refugio" "footer"; }
+
+.main-refugio {
+  grid-area: main-refugio; }
+
+.grid-container-adopciones {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 110px 1fr 80px;
+  grid-template-areas: "menu-bar" "main-adoptar" "footer"; }
+
+.main-adoptar {
+  grid-area: main-adoptar; }
+
+.grid-container-contacto {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 110px 1fr 80px;
+  grid-template-areas: "menu-bar" "main-contacto" "footer"; }
+
+.main-contacto {
+  grid-area: main-contacto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #5a99b6;
+  height: 830px; }
 
 .navbar {
   display: flex;
@@ -189,3 +234,142 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly; }
+
+/* Nosotros Page */
+.us {
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .us p {
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    margin: 20px; }
+  .us img {
+    width: 500px;
+    height: 300px;
+    margin: 20px;
+    rotate: 5deg; }
+
+.fundadores {
+  background-color: #02304744; }
+  .fundadores h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    color: #023047; }
+  .fundadores .box-fundador {
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    .fundadores .box-fundador .card {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      height: 400px;
+      background-color: #5a99b6; }
+      .fundadores .box-fundador .card img {
+        width: 200px;
+        height: 300px; }
+      .fundadores .box-fundador .card .card-body p {
+        font-family: 'Lato', sans-serif;
+        color: #023047;
+        font-size: 18px; }
+
+/* Refugio Page */
+.info-refugio {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .info-refugio div p {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    margin: 30px; }
+  .info-refugio iframe {
+    width: 80%;
+    height: 650px;
+    margin-bottom: 60px; }
+
+.animales {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .animales img {
+    width: 200px;
+    height: 200px; }
+
+/* Adopciones Page */
+.hashtag h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  margin: 30px; }
+
+.hashtag p {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  margin-left: 30px; }
+
+.box-adoptar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 800px;
+  margin: 30px;
+  gap: 10px;
+  flex-wrap: wrap; }
+  .box-adoptar div img {
+    width: 330px;
+    height: 400px; }
+  .box-adoptar div div {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 15px; }
+    .box-adoptar div div p {
+      font-family: 'Lato', sans-serif;
+      font-size: 20px; }
+    .box-adoptar div div a {
+      text-decoration: none;
+      font-family: 'Lato', sans-serif;
+      font-size: 20px;
+      background-color: #023047;
+      width: fit-content;
+      border-radius: 3px;
+      color: #cad8df; }
+      .box-adoptar div div a:hover {
+        background-color: #219EBC; }
+
+.map {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin: 20px; }
+  .map div {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #cad8df;
+    margin: 20px;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .map div:hover {
+      color: #023047; }
+
+.formulario {
+  color: #cad8df; }
+  .formulario h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px; }

@@ -6,9 +6,70 @@
         "menu-bar"
         "main-index"
         "footer";
+}
+.menu-bar {
+    grid-area: menu-bar;
+    background-color: #8FBDD3;
+}
 
-    .menu-bar {
-        grid-area: menu-bar;
-        background-color: #8FBDD3;
-    }
+
+.grid-container-nosotros {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 110px 1fr 80px;
+    grid-template-areas:
+        "menu-bar"
+        "quienes-somos"
+        "footer";
+}
+.quienes-somos {
+    grid-area: quienes-somos;
+    background-image: url(../img/pattern.jpg);
+    background-size: contain;
+}
+
+
+.grid-container-refugio {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 110px 1fr 80px;
+    grid-template-areas:
+        "menu-bar"
+        "main-refugio"
+        "footer";
+}
+.main-refugio {
+    grid-area: main-refugio;
+}
+
+.grid-container-adopciones {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 110px 1fr 80px;
+    grid-template-areas:
+        "menu-bar"
+        "main-adoptar"
+        "footer";
+}
+.main-adoptar {
+    grid-area: main-adoptar;
+}
+
+.grid-container-contacto {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 110px 1fr 80px;
+    grid-template-areas:
+        "menu-bar"
+        "main-contacto"
+        "footer";
+}
+.main-contacto {
+    grid-area: main-contacto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #5a99b6;
+    height: 830px;
 }
