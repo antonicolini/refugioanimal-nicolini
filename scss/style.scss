@@ -1,5 +1,6 @@
 @import "./base/generales";
 @import "./base/variables";
+@import "./base/maps";
 @import "./base/gridlayout";
 @import "./components/header";
 @import "./components/footer";
@@ -55,8 +56,8 @@
         font-weight: bold;
         grid-column: 2/3;
         grid-row: 6/7;
-        background-color: $color-celeste;
-        border-radius: 10px;
+        background-color: map-get($map: $boton-donar, $key: "bg-boton");
+        border-radius: map-get($map:$boton-donar, $key: "border-boton" );
         width: 50%;
         padding-top: 20px;
         text-align: center;
@@ -122,11 +123,8 @@
         justify-content: space-around;
 
         .item-donaciones {
-            display: flex;
-            flex-direction: column;
+            @include flex (flex, column, center, center);
             width: 20%;
-            align-items: center;
-            justify-content: center;
             border-radius: 50%;
 
             img {
@@ -151,9 +149,7 @@
 }
 
 .instagram {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend %flex;
 
     h3 {
         font-family: 'Lato', sans-serif;
@@ -190,10 +186,7 @@
 /* Nosotros Page */
 .us {
     height: 600px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @include flex (flex, row, space-between, center);
 
     p {
         font-family: 'Lato', sans-serif;
@@ -222,18 +215,12 @@
     }
 
     .box-fundador {
-        display: flex;
-        flex-direction: row;
+        @include flex (flex, row, space-around, center);
         height: 600px;
-        justify-content: space-around;
-        align-items: center;
         flex-wrap: wrap;
 
         .card {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
+            @include flex (flex, row, space-around, center);
             flex-wrap: wrap;
             height: 400px;
             background-color: #5a99b6;
@@ -254,9 +241,7 @@
 
 /* Refugio Page */
 .info-refugio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend %flex;
 
     div p {
         font-family: 'Lato', sans-serif;

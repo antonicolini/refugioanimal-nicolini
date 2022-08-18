@@ -1,7 +1,7 @@
+@import "./extend";
+
 .grid-container-index {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 110px 1fr 80px;
+    @extend %layout;
     grid-template-areas:
         "menu-bar"
         "main-index"
@@ -14,9 +14,7 @@
 
 
 .grid-container-nosotros {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 110px 1fr 80px;
+    @extend %layout;
     grid-template-areas:
         "menu-bar"
         "quienes-somos"
@@ -30,9 +28,7 @@
 
 
 .grid-container-refugio {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 110px 1fr 80px;
+    @extend %layout;
     grid-template-areas:
         "menu-bar"
         "main-refugio"
@@ -43,9 +39,7 @@
 }
 
 .grid-container-adopciones {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 110px 1fr 80px;
+    @extend %layout;
     grid-template-areas:
         "menu-bar"
         "main-adoptar"
@@ -56,9 +50,7 @@
 }
 
 .grid-container-contacto {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 110px 1fr 80px;
+    @extend %layout;
     grid-template-areas:
         "menu-bar"
         "main-contacto"

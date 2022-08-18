@@ -4,10 +4,17 @@
   padding: 0;
   box-sizing: border-box; }
 
-.grid-container-index {
+.grid-container-index, .grid-container-nosotros, .grid-container-refugio, .grid-container-adopciones, .grid-container-contacto {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 110px 1fr 80px;
+  grid-template-rows: 110px 1fr 80px; }
+
+.instagram, .info-refugio {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.grid-container-index {
   grid-template-areas: "menu-bar" "main-index" "footer"; }
 
 .menu-bar {
@@ -15,9 +22,6 @@
   background-color: #8FBDD3; }
 
 .grid-container-nosotros {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 110px 1fr 80px;
   grid-template-areas: "menu-bar" "quienes-somos" "footer"; }
 
 .quienes-somos {
@@ -26,27 +30,18 @@
   background-size: contain; }
 
 .grid-container-refugio {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 110px 1fr 80px;
   grid-template-areas: "menu-bar" "main-refugio" "footer"; }
 
 .main-refugio {
   grid-area: main-refugio; }
 
 .grid-container-adopciones {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 110px 1fr 80px;
   grid-template-areas: "menu-bar" "main-adoptar" "footer"; }
 
 .main-adoptar {
   grid-area: main-adoptar; }
 
 .grid-container-contacto {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 110px 1fr 80px;
   grid-template-areas: "menu-bar" "main-contacto" "footer"; }
 
 .main-contacto {
@@ -192,9 +187,9 @@
     .ley-index .bloque-donaciones .item-donaciones {
       display: flex;
       flex-direction: column;
-      width: 20%;
-      align-items: center;
       justify-content: center;
+      align-items: center;
+      width: 20%;
       border-radius: 50%; }
       .ley-index .bloque-donaciones .item-donaciones img {
         width: 130px;
@@ -209,31 +204,30 @@
         .ley-index .bloque-donaciones .item-donaciones a:hover {
           color: #5a99b6; }
 
-.instagram {
+.instagram h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  margin: 10px; }
+
+.instagram h4 {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  margin: 20px;
+  padding-bottom: 40px; }
+
+.instagram img {
+  width: 400px;
+  height: 400px;
+  padding-bottom: 50px; }
+  .instagram img:hover {
+    transform: scale(1.2);
+    transition: 1s; }
+
+.instagram .fotos-instagram {
   display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .instagram h3 {
-    font-family: 'Lato', sans-serif;
-    font-size: 30px;
-    margin: 10px; }
-  .instagram h4 {
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-    margin: 20px;
-    padding-bottom: 40px; }
-  .instagram img {
-    width: 400px;
-    height: 400px;
-    padding-bottom: 50px; }
-    .instagram img:hover {
-      transform: scale(1.2);
-      transition: 1s; }
-  .instagram .fotos-instagram {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly; }
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
 
 /* Nosotros Page */
 .us {
@@ -264,9 +258,9 @@
   .fundadores .box-fundador {
     display: flex;
     flex-direction: row;
-    height: 600px;
     justify-content: space-around;
     align-items: center;
+    height: 600px;
     flex-wrap: wrap; }
     .fundadores .box-fundador .card {
       display: flex;
@@ -285,19 +279,16 @@
         font-size: 18px; }
 
 /* Refugio Page */
-.info-refugio {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .info-refugio div p {
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-    font-style: italic;
-    margin: 30px; }
-  .info-refugio iframe {
-    width: 80%;
-    height: 650px;
-    margin-bottom: 60px; }
+.info-refugio div p {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  margin: 30px; }
+
+.info-refugio iframe {
+  width: 80%;
+  height: 650px;
+  margin-bottom: 60px; }
 
 .animales {
   display: flex;
