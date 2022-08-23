@@ -1,4 +1,6 @@
 @import "./extend";
+@import "./variables";
+
 
 .grid-container-index {
     @extend %layout;
@@ -9,7 +11,7 @@
 }
 .menu-bar {
     grid-area: menu-bar;
-    background-color: #8FBDD3;
+    background-color: $secundario;
 }
 
 
@@ -62,6 +64,5 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #5a99b6;
     height: 830px;
 }

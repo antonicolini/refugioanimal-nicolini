@@ -1,6 +1,6 @@
 .footer {
     grid-area: footer;
-    background-color: $color-celeste-claro;
+    background-color: $secundario;
     @include flex (flex, row, space-between, center);
     img {
         width: 40px;
@@ -13,7 +13,7 @@
         font-size: 35px;
         padding: 10px;
         &:hover {
-            color: $color-celeste;
+            color: $secundario;
         }
     }
 

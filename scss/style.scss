@@ -25,8 +25,7 @@
         padding-top: 12px;
         grid-column: 2/4;
         grid-row: 2/3;
-        background-color: #8ecae63b;
-        color: $color-azul;
+        color: $oscuro;
     }
 
     h2 {
@@ -36,8 +35,7 @@
         padding-top: 30px;
         grid-column: 2/4;
         grid-row: 3/4;
-        background-color: #8ecae63b;
-        color: $color-azul;
+        color: $oscuro;
     }
 
     p {
@@ -47,8 +45,7 @@
         padding-top: 25px;
         grid-column: 2/4;
         grid-row: 4/5;
-        background-color: #8ecae63b;
-        color: $color-blanco;
+        color: $claro;
     }
 
     a {
@@ -63,22 +60,22 @@
         padding-top: 20px;
         text-align: center;
         text-decoration: none;
-        color: #f8f7ff;
+        color: $claro;
 
         &:hover {
             animation: donar 4s;
 
             @keyframes donar {
                 0% {
-                    background-color: $color-azul;
-                    color: $color-celeste-claro;
+                    background-color: $oscuro;
+                    color: $secundario;
                     transform: scale(1.2);
 
                 }
 
                 25% {
-                    background-color: $color-azul;
-                    color: $color-celeste-claro;
+                    background-color: $oscuro;
+                    color: $secundario;
                     transform: scale(1);
                 }
             }
@@ -94,8 +91,8 @@
     background: linear-gradient(180deg, rgba(143, 189, 211, 1) 0%, rgba(255, 255, 255, 0.36738445378151263) 100%);
 
     .ley-animal {
-        background-color: $color-celeste;
-        color: $color-blanco;
+        background-color: $oscuro;
+        color: $claro;
         margin: 100px;
         @extend %flex;
         border-radius: 10px;
@@ -131,7 +128,7 @@
 
             a {
                 text-decoration: none;
-                color: $color-azul;
+                color: $oscuro;
                 padding-top: 20px;
                 font-family: 'Lato', sans-serif;
                 font-size: 20px;
@@ -205,7 +202,7 @@
         text-align: center;
         margin-bottom: 0.5em;
         padding-top: 0.75em;
-        color: #023047;
+        color: $oscuro;
     }
 
     .box-fundador {
@@ -217,7 +214,7 @@
             @include flex (flex, row, space-around, center);
             flex-wrap: wrap;
             height: 400px;
-            background-color: #5a99b6;
+            background-color: $secundario;
 
             img {
                 width: 200px;
@@ -226,7 +223,7 @@
 
             .card-body p {
                 font-family: 'Lato', sans-serif;
-                color: #023047;
+                color: $oscuro;
                 font-size: nth($font-size , 5 );
             }
         }
@@ -299,12 +296,12 @@
                 text-decoration: none;
                 font-family: 'Lato', sans-serif;
                 font-size: nth($font-size , 5 );
-                background-color: #023047;
+                background-color:$oscuro;
                 width: fit-content;
                 border-radius: 3px;
                 color: #cad8df;
                 &:hover {
-                    background-color: #219EBC;
+                    background-color: $principal;
                 }
             }
         }
@@ -322,7 +319,7 @@
     div {
         font-family: 'Lato', sans-serif;
         font-size: nth($font-size , 5 );
-        color: #cad8df;
+        color: $oscuro;
         margin: 20px;
         width: 40%;
         display: flex;
@@ -330,14 +327,14 @@
         justify-content: space-around;
 
         &:hover {
-            color: #023047;
+            color: $oscuro;
         }
     }
 
 }
 
 .formulario {
-    color: #cad8df;
+    color: $oscuro;
 
     h3 {
         font-family: 'Lato', sans-serif;
