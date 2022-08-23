@@ -233,6 +233,8 @@
 /* Refugio Page */
 .info-refugio {
     @extend %flex;
+    background: rgb(143,189,211);
+background: linear-gradient(0deg, rgba(143,189,211,1) 0%, rgba(255,255,255,0.36738445378151263) 100%);
 
     div p {
         font-family: 'Lato', sans-serif;
@@ -250,6 +252,9 @@
 
 .animales {
     @include flex-wrap (flex, row, center, wrap);
+    background-color: $oscuro;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     img {
         width: 200px;
@@ -270,6 +275,12 @@
         font-size: 1.25rem;
         margin-left: 1.5em;
     }
+    .hashtag-adopta{
+        font-family: 'Lato', sans-serif;
+        font-size: 1.25rem;
+        margin-left: 1.5em;
+        color: $principal;
+    }
 }
 
 .box-adoptar {
@@ -281,6 +292,8 @@
     gap: 10px;
     .card {
         width: 330px;
+        height: 700px;
+        background-color: $claro;
         img {
             width: 330px;
             height: 400px;
@@ -296,10 +309,10 @@
                 text-decoration: none;
                 font-family: 'Lato', sans-serif;
                 font-size: nth($font-size , 5 );
-                background-color:$oscuro;
+                background-color:$secundario;
                 width: fit-content;
                 border-radius: 3px;
-                color: #cad8df;
+                color: $oscuro;
                 &:hover {
                     background-color: $principal;
                 }

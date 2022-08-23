@@ -53,6 +53,8 @@
 
 .grid-container-contacto {
     @extend %layout;
+    background-image: url(../img/pattern.jpg);
+    background-size: contain;
     grid-template-areas:
         "menu-bar"
         "main-contacto"
@@ -60,9 +62,6 @@
 }
 .main-contacto {
     grid-area: main-contacto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    @include flex (flex, row, space-around, center);
     height: 830px;
 }

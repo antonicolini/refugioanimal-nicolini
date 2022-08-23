@@ -42,6 +42,8 @@
   grid-area: main-adoptar; }
 
 .grid-container-contacto {
+  background-image: url(../img/pattern.jpg);
+  background-size: contain;
   grid-template-areas: "menu-bar" "main-contacto" "footer"; }
 
 .main-contacto {
@@ -269,22 +271,27 @@
         font-size: 18px; }
 
 /* Refugio Page */
-.info-refugio div p {
-  font-family: 'Lato', sans-serif;
-  font-size: 1.25rem;
-  font-style: italic;
-  margin: 1.5em; }
-
-.info-refugio iframe {
-  width: 80%;
-  height: 650px;
-  margin-bottom: 60px; }
+.info-refugio {
+  background: #8fbdd3;
+  background: linear-gradient(0deg, #8fbdd3 0%, rgba(255, 255, 255, 0.367384) 100%); }
+  .info-refugio div p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25rem;
+    font-style: italic;
+    margin: 1.5em; }
+  .info-refugio iframe {
+    width: 80%;
+    height: 650px;
+    margin-bottom: 60px; }
 
 .animales {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  background-color: #023047;
+  padding-top: 10px;
+  padding-bottom: 10px; }
   .animales img {
     width: 200px;
     height: 200px; }
@@ -300,6 +307,12 @@
   font-size: 1.25rem;
   margin-left: 1.5em; }
 
+.hashtag .hashtag-adopta {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25rem;
+  margin-left: 1.5em;
+  color: #219EBC; }
+
 .box-adoptar {
   display: flex;
   flex-direction: row;
@@ -310,7 +323,9 @@
   margin: 30px;
   gap: 10px; }
   .box-adoptar .card {
-    width: 330px; }
+    width: 330px;
+    height: 700px;
+    background-color: #f8f7ff; }
     .box-adoptar .card img {
       width: 330px;
       height: 400px; }
@@ -327,10 +342,10 @@
         text-decoration: none;
         font-family: 'Lato', sans-serif;
         font-size: 18px;
-        background-color: #023047;
+        background-color: #8ECAE6;
         width: fit-content;
         border-radius: 3px;
-        color: #cad8df; }
+        color: #023047; }
         .box-adoptar .card .card-body a:hover {
           background-color: #219EBC; }
 
