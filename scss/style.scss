@@ -1,5 +1,6 @@
 @import "./base/generales";
 @import "./base/variables";
+@import "./base/mixin";
 @import "./base/maps";
 @import "./base/gridlayout";
 @import "./components/header";
@@ -88,9 +89,7 @@
 
 .ley-index {
     height: 800px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend %flex;
     background: rgb(143, 189, 211);
     background: linear-gradient(180deg, rgba(143, 189, 211, 1) 0%, rgba(255, 255, 255, 0.36738445378151263) 100%);
 
@@ -98,9 +97,7 @@
         background-color: $color-celeste;
         color: $color-blanco;
         margin: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @extend %flex;
         border-radius: 10px;
 
         h3 {
@@ -176,10 +173,7 @@
     }
 
     .fotos-instagram {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        @include flex-wrap (flex, row, space-evenly, wrap);
     }
 }
 
@@ -258,10 +252,7 @@
 }
 
 .animales {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include flex-wrap (flex, row, center, wrap);
 
     img {
         width: 200px;
@@ -285,14 +276,12 @@
 }
 
 .box-adoptar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    
+    @include flex-wrap (flex, row, space-between, wrap);
     width: auto;
     height: 800px;
     margin: 30px;
     gap: 10px;
-    flex-wrap: wrap;
     .card {
         width: 330px;
         img {
@@ -300,11 +289,8 @@
             height: 400px;
         }
         .card-body {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
+            @include flex (flex, column, space-evenly, center);
             text-align: center;
-            align-items: center;
             p {
                 font-family: 'Lato', sans-serif;
                 font-size: 20px;

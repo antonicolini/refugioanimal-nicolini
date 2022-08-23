@@ -9,7 +9,7 @@
   grid-template-columns: 100%;
   grid-template-rows: 110px 1fr 80px; }
 
-.instagram, .info-refugio {
+.ley-index, .ley-index .ley-animal, .instagram, .info-refugio {
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -158,18 +158,12 @@
 
 .ley-index {
   height: 800px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background: #8fbdd3;
   background: linear-gradient(180deg, #8fbdd3 0%, rgba(255, 255, 255, 0.367384) 100%); }
   .ley-index .ley-animal {
     background-color: #219EBC;
     color: #f8f7ff;
     margin: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     border-radius: 10px; }
     .ley-index .ley-animal h3 {
       font-family: 'Lato', sans-serif;
@@ -226,8 +220,8 @@
 .instagram .fotos-instagram {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
 
 /* Nosotros Page */
 .us {
@@ -293,8 +287,8 @@
 .animales {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  flex-wrap: wrap; }
   .animales img {
     width: 200px;
     height: 200px; }
@@ -314,11 +308,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: auto;
   height: 800px;
   margin: 30px;
-  gap: 10px;
-  flex-wrap: wrap; }
+  gap: 10px; }
   .box-adoptar .card {
     width: 330px; }
     .box-adoptar .card img {
@@ -328,8 +322,8 @@
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      text-align: center;
-      align-items: center; }
+      align-items: center;
+      text-align: center; }
       .box-adoptar .card .card-body p {
         font-family: 'Lato', sans-serif;
         font-size: 20px; }
