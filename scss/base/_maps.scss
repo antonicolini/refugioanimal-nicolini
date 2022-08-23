@@ -1,6 +1,10 @@
 @import "./variables";
 
-$boton-donar: (
+$boton: (
     bg-boton:$secundario,
     border-boton: 10px,
 );
+$card: (
+    border-card: 3px,
+    color : $oscuro,
+)

@@ -54,8 +54,8 @@
         font-weight: bold;
         grid-column: 2/3;
         grid-row: 6/7;
-        background-color: map-get($map: $boton-donar, $key: "bg-boton");
-        border-radius: map-get($map:$boton-donar, $key: "border-boton" );
+        background-color: map-get($map: $boton, $key: "bg-boton");
+        border-radius: map-get($map:$boton, $key: "border-boton" );
         width: 50%;
         padding-top: 20px;
         text-align: center;
@@ -309,10 +309,10 @@ background: linear-gradient(0deg, rgba(143,189,211,1) 0%, rgba(255,255,255,0.367
                 text-decoration: none;
                 font-family: 'Lato', sans-serif;
                 font-size: nth($font-size , 5 );
-                background-color:$secundario;
+                background-color:map-get($map:$boton , $key: "bg-boton");
                 width: fit-content;
-                border-radius: 3px;
-                color: $oscuro;
+                border-radius: map-get($map: $card, $key: "border-card");
+                color: map-get($map: $card, $key: "color");
                 &:hover {
                     background-color: $principal;
                 }
