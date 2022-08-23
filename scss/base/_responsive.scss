@@ -1,0 +1,132 @@
+/* INDEX */
+@media screen and (max-width: 1700px) {
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .banner h1 {
+        background-color: #02304700;
+    }
+
+    .banner h2 {
+        background-color: #02304700;
+    }
+
+    .banner p {
+        background-color: #02304700;
+    }
+
+    .banner a {
+        width: 150px;
+        margin: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .item-donaciones {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    .bloque-donaciones img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-container-index {
+        grid-template-rows: 110px 1fr 80px;
+    }
+
+    .navbar {
+        background: #8FBDD3;
+    }
+
+}
+
+@media screen and (max-width: 898px) {
+    .banner h1 {
+        text-align: center;
+    }
+
+    .item-donaciones {
+        background-color: #02304700;
+    }
+
+    .footer p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 818px) {
+    .ley-index {
+        height: 1000px;
+    }
+
+    .bloque-donaciones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 778px) {
+    .ley-index {
+        height: 1300px;
+        justify-content: space-around;
+    }
+
+}
+
+@media screen and (max-width: 647px) {
+    .banner h2 {
+        display: none;
+    }
+
+    .banner p {
+        display: none;
+    }
+
+    .banner a {
+        display: none;
+    }
+
+    .banner {
+        height: 400px;
+    }
+
+    .instagram {
+        margin-top: 60px;
+    }
+
+    .ley-animal {
+        display: none;
+    }
+
+    .bloque-donaciones {
+        height: 1000px;
+    }
+
+    .banner h1 {
+        font-size: 50px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .instagram {
+        display: none;
+    }
+}
