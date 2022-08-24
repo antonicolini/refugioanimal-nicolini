@@ -113,8 +113,8 @@
     .bloque-donaciones {
         display: flex;
         width: 70%;
-        height: 200px;
         justify-content: space-around;
+
 
         .item-donaciones {
             @include flex (flex, column, center, center);

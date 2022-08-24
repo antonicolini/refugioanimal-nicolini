@@ -42,6 +42,7 @@
 
 .grid-container-adopciones {
     @extend %layout;
+
     grid-template-areas:
         "menu-bar"
         "main-adoptar"

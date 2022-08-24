@@ -1,3 +1,5 @@
+@import "../base/mixin";
+
 /* INDEX */
 @media screen and (max-width: 1700px) {
     .banner {
@@ -5,24 +7,12 @@
         flex-direction: column;
         align-items: center;
         padding: 30px;
-    }
 
-    .banner h1 {
-        background-color: #02304700;
-    }
-
-    .banner h2 {
-        background-color: #02304700;
-    }
-
-    .banner p {
-        background-color: #02304700;
-    }
-
-    .banner a {
-        width: 150px;
-        margin: 20px;
-        padding-bottom: 20px;
+        a {
+            width: 150px;
+            margin: 20px;
+            padding-bottom: 20px;
+        }
     }
 }
 
@@ -32,36 +22,24 @@
     }
 }
 
-@media screen and (max-width: 1090px) {
-    .bloque-donaciones img {
-        width: 80px;
-        height: 80px;
-    }
-}
 
 @media screen and (max-width: 991px) {
-    .navbar-nav {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .grid-container-index {
-        grid-template-rows: 110px 1fr 80px;
-    }
-
     .navbar {
         background: #8FBDD3;
+
+        .navbar-nav {
+            display: flex;
+            flex-direction: column;
+            background: #8FBDD3;
+        }
     }
+
 
 }
 
 @media screen and (max-width: 898px) {
-    .banner h1 {
-        text-align: center;
-    }
-
-    .item-donaciones {
-        background-color: #02304700;
+    .ley-index {
+        height: 850px;
     }
 
     .footer p {
@@ -72,61 +50,224 @@
 @media screen and (max-width: 818px) {
     .ley-index {
         height: 1000px;
+
+        .bloque-donaciones {
+            display: flex;
+            width: 70%;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+
+            .item-donaciones {
+                padding: 15px;
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
     }
 
-    .bloque-donaciones {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 20px;
+    .instagram {
+        margin-top: 200px;
+
+        img {
+            padding: 20px;
+        }
     }
 }
 
-@media screen and (max-width: 778px) {
+
+@media screen and (max-width: 563px) {
     .ley-index {
-        height: 1300px;
-        justify-content: space-around;
-    }
-
-}
-
-@media screen and (max-width: 647px) {
-    .banner h2 {
-        display: none;
-    }
-
-    .banner p {
-        display: none;
-    }
-
-    .banner a {
-        display: none;
+        height: 1500px;
     }
 
     .banner {
-        height: 400px;
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            display: none;
+        }
+
+        p {
+            visibility: hidden;
+        }
     }
 
     .instagram {
-        margin-top: 60px;
-    }
-
-    .ley-animal {
         display: none;
     }
+}
 
-    .bloque-donaciones {
-        height: 1000px;
+@media screen and (max-width: 527px) {
+    .banner {
+
+        h1 {
+            font-size: nth($font-size , $n: 2);
+        }
+
+        a {
+            display: none;
+        }
     }
 
-    .banner h1 {
-        font-size: 50px;
+    .ley-index {
+        height: 2000px;
+    }
+}
+
+/* NOSOTROS PAGE */
+@media screen and (max-width: 955px) {
+    .us {
+        height: 1000px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        img {
+            rotate: none;
+        }
+    }
+}
+
+@media screen and (max-width: 869px) {
+    .fundadores {
+        .box-fundador {
+            height: 900px;
+        }
+    }
+}
+
+@media screen and (max-width: 622px) {
+    .fundadores {
+        height: 1400px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+
+        .card {
+            margin-top: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 622px) {
+    .us {
+        img {
+            width: 400px;
+            height: 250px;
+        }
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .us {
+        height: 600px;
+
+        p {
+            font-size: nth($font-size, 5);
+        }
+
+        img {
+            display: none;
+        }
+    }
+}
+
+/* REGUFIO PAGE */
+@media screen and (max-width: 638px) {
+    .info-refugio {
+        iframe {
+            display: none;
+        }
+    }
+}
+
+/* ADOPCIONES PAGE */
+@media (max-width: 1750px) and (min-width:712px) {
+    .box-adoptar {
+        height: 90%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        .card {
+            flex-direction: row;
+            align-items: center;
+            width: auto;
+            background-image: url(../img/pattern.jpg);
+            background-size: contain;
+
+            img {
+                height: auto;
+            }
+
+            .card-body {
+                align-items: flex-start;
+                background-color: $claro;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 711px) {
+    .box-adoptar {
+        height: 4000px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 458px) {
+    .box-adoptar {
+
+        .card {
+            width: 280px;
+            height: 600px;
+            align-items: center;
+
+            img {
+                width: 180px;
+                height: 250px;
+
+            }
+        }
     }
 
 }
 
-@media screen and (max-width: 480px) {
-    .instagram {
-        display: none;
+/* contacto page */
+@media screen and (max-width: 1160px) {
+    .main-contacto {
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
     }
+.formulario {
+    background-color: $principal;
+    width: 100%;
+    padding: 40px;
+}
+
+}
+@media screen and (max-width: 768px) {
+    .map {
+        div {
+            width: 100%;
+            i {
+                font-size: 16px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+        iframe {
+            width:100%;
+            height: 100%;
+        }
+    }
+    .row {
+        flex-direction: column;
+}
 }
