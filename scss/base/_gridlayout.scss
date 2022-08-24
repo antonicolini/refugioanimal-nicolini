@@ -11,7 +11,7 @@
 }
 .menu-bar {
     grid-area: menu-bar;
-    background-color: $secundario;
+    background-color: $oscuro;
 }
 
 
@@ -24,8 +24,7 @@
 }
 .quienes-somos {
     grid-area: quienes-somos;
-    background-image: url(../img/pattern.jpg);
-    background-size: contain;
+background-color: $secundario
 }
 
 
@@ -50,12 +49,12 @@
 }
 .main-adoptar {
     grid-area: main-adoptar;
+    background-color: $secundario;
 }
 
 .grid-container-contacto {
     @extend %layout;
-    background-image: url(../img/pattern.jpg);
-    background-size: contain;
+    background-color: $secundario;
     grid-template-areas:
         "menu-bar"
         "main-contacto"

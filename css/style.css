@@ -19,15 +19,14 @@
 
 .menu-bar {
   grid-area: menu-bar;
-  background-color: #8ECAE6; }
+  background-color: #023047; }
 
 .grid-container-nosotros {
   grid-template-areas: "menu-bar" "quienes-somos" "footer"; }
 
 .quienes-somos {
   grid-area: quienes-somos;
-  background-image: url(../img/pattern.jpg);
-  background-size: contain; }
+  background-color: #8ECAE6; }
 
 .grid-container-refugio {
   grid-template-areas: "menu-bar" "main-refugio" "footer"; }
@@ -39,11 +38,11 @@
   grid-template-areas: "menu-bar" "main-adoptar" "footer"; }
 
 .main-adoptar {
-  grid-area: main-adoptar; }
+  grid-area: main-adoptar;
+  background-color: #8ECAE6; }
 
 .grid-container-contacto {
-  background-image: url(../img/pattern.jpg);
-  background-size: contain;
+  background-color: #8ECAE6;
   grid-template-areas: "menu-bar" "main-contacto" "footer"; }
 
 .main-contacto {
@@ -68,15 +67,16 @@
   .navbar .navbar-nav {
     display: flex;
     flex-direction: row;
-    color: #f8f7ff;
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase; }
+    .navbar .navbar-nav .nav-link {
+      color: #f8f7ff; }
 
 .footer {
   grid-area: footer;
-  background-color: #8ECAE6;
+  background-color: #023047;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -87,10 +87,12 @@
     margin-left: 25px;
     margin-top: 10px;
     margin-bottom: 10px; }
+  .footer p {
+    color: #7D92A2; }
   .footer .logo-redes i {
     font-size: 35px;
     padding: 10px;
-    color: #023047; }
+    color: #f8f7ff; }
     .footer .logo-redes i:hover {
       color: #219EBC; }
 
@@ -231,7 +233,8 @@
   .us p {
     font-family: 'Lato', sans-serif;
     font-size: 1.375rem;
-    margin: 1.1em; }
+    margin: 1.1em;
+    color: #023047; }
   .us img {
     width: 500px;
     height: 300px;
@@ -239,14 +242,14 @@
     rotate: 5deg; }
 
 .fundadores {
-  background-color: #02304744; }
+  background-color: #1A506B; }
   .fundadores h3 {
     font-family: 'Lato', sans-serif;
     font-size: 40px;
     text-align: center;
     margin-bottom: 0.5em;
     padding-top: 0.75em;
-    color: #023047; }
+    color: #f8f7ff; }
   .fundadores .box-fundador {
     display: flex;
     flex-direction: row;
@@ -261,24 +264,25 @@
       align-items: center;
       flex-wrap: wrap;
       height: 400px;
-      background-color: #8ECAE6; }
+      background-color: #1A506B; }
       .fundadores .box-fundador .card img {
         width: 200px;
         height: 300px; }
       .fundadores .box-fundador .card .card-body p {
         font-family: 'Lato', sans-serif;
-        color: #023047;
+        color: #f8f7ff;
         font-size: 18px; }
 
 /* Refugio Page */
 .info-refugio {
-  background: #8fbdd3;
-  background: linear-gradient(0deg, #8fbdd3 0%, rgba(255, 255, 255, 0.367384) 100%); }
+  background-color: #8ECAE6; }
   .info-refugio div p {
     font-family: 'Lato', sans-serif;
     font-size: 1.25rem;
     font-style: italic;
-    margin: 1.5em; }
+    margin: 1.5em;
+    color: #f8f7ff;
+    font-weight: 600; }
   .info-refugio iframe {
     width: 80%;
     height: 650px;
@@ -289,7 +293,8 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #023047;
+  background: #8ecae6;
+  background: linear-gradient(180deg, #8ecae6 0%, #023047 100%);
   padding-top: 10px;
   padding-bottom: 10px; }
   .animales img {
@@ -321,7 +326,10 @@
   width: auto;
   height: 800px;
   margin: 30px;
-  gap: 10px; }
+  padding: 20px;
+  border-radius: 5px;
+  gap: 10px;
+  background-color: #023047; }
   .box-adoptar .card {
     width: 330px;
     height: 700px;

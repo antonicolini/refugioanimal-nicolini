@@ -183,6 +183,7 @@
         font-family: 'Lato', sans-serif;
         font-size: 1.375rem;
         margin: 1.1em;
+        color: $oscuro;
     }
 
     img {
@@ -194,7 +195,7 @@
 }
 
 .fundadores {
-    background-color: #02304744;
+    background-color:$complemento;
 
     h3 {
         font-family: 'Lato', sans-serif;
@@ -202,7 +203,7 @@
         text-align: center;
         margin-bottom: 0.5em;
         padding-top: 0.75em;
-        color: $oscuro;
+        color: $claro;
     }
 
     .box-fundador {
@@ -214,7 +215,7 @@
             @include flex (flex, row, space-around, center);
             flex-wrap: wrap;
             height: 400px;
-            background-color: $secundario;
+            background-color: $complemento;
 
             img {
                 width: 200px;
@@ -223,7 +224,7 @@
 
             .card-body p {
                 font-family: 'Lato', sans-serif;
-                color: $oscuro;
+                color: $claro;
                 font-size: nth($font-size , 5 );
             }
         }
@@ -233,14 +234,15 @@
 /* Refugio Page */
 .info-refugio {
     @extend %flex;
-    background: rgb(143,189,211);
-background: linear-gradient(0deg, rgba(143,189,211,1) 0%, rgba(255,255,255,0.36738445378151263) 100%);
+    background-color: $secundario;
 
     div p {
         font-family: 'Lato', sans-serif;
         font-size: 1.25rem;
         font-style: italic;
         margin: 1.5em;
+        color: $claro;
+        font-weight: 600;
     }
 
     iframe {
@@ -252,7 +254,8 @@ background: linear-gradient(0deg, rgba(143,189,211,1) 0%, rgba(255,255,255,0.367
 
 .animales {
     @include flex-wrap (flex, row, center, wrap);
-    background-color: $oscuro;
+    background: rgb(142,202,230);
+background: linear-gradient(180deg, rgba(142,202,230,1) 0%, rgba(2,48,71,1) 100%);
     padding-top: 10px;
     padding-bottom: 10px;
 
@@ -289,7 +292,10 @@ background: linear-gradient(0deg, rgba(143,189,211,1) 0%, rgba(255,255,255,0.367
     width: auto;
     height: 800px;
     margin: 30px;
+    padding: 20px;
+    border-radius: 5px;
     gap: 10px;
+    background-color: $oscuro;
     .card {
         width: 330px;
         height: 700px;
