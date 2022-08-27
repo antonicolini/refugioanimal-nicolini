@@ -145,14 +145,18 @@
     text-decoration: none;
     color: #f8f7ff; }
     .banner a:hover {
-      animation: donar 4s; }
+      animation: donar 4s ease-out 0.2s; }
 
 @keyframes donar {
   0% {
     background-color: #023047;
     color: #8ECAE6;
-    transform: scale(1.2); }
+    transform: scale(1.1); }
   25% {
+    background-color: #023047;
+    color: #8ECAE6;
+    transform: scale(1); }
+  50% {
     background-color: #023047;
     color: #8ECAE6;
     transform: scale(1); } }
@@ -291,7 +295,7 @@
 .animales {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   background: #8ecae6;
   background: linear-gradient(180deg, #8ecae6 0%, #023047 100%);

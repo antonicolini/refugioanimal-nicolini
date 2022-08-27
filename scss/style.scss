@@ -17,7 +17,7 @@
     gap: 5px;
 
     h1 {
-        font-size: nth($font-size,1);
+        font-size: nth($font-size, 1);
         font-weight: 700;
         font-family: 'Lato', sans-serif;
         text-transform: uppercase;
@@ -29,7 +29,7 @@
     }
 
     h2 {
-        font-size: nth($font-size,2);
+        font-size: nth($font-size, 2);
         font-family: 'Lato', sans-serif;
         padding-left: 20px;
         padding-top: 30px;
@@ -39,7 +39,7 @@
     }
 
     p {
-        font-size: nth($font-size,4);
+        font-size: nth($font-size, 4);
         font-family: 'Lato', sans-serif;
         padding-left: 20px;
         padding-top: 25px;
@@ -49,13 +49,13 @@
     }
 
     a {
-        font-size: nth($font-size,3);
+        font-size: nth($font-size, 3);
         font-family: 'Lato', sans-serif;
         font-weight: bold;
         grid-column: 2/3;
         grid-row: 6/7;
         background-color: map-get($map: $boton, $key: "bg-boton");
-        border-radius: map-get($map:$boton, $key: "border-boton" );
+        border-radius: map-get($map: $boton, $key: "border-boton");
         width: 50%;
         padding-top: 20px;
         text-align: center;
@@ -63,17 +63,23 @@
         color: $claro;
 
         &:hover {
-            animation: donar 4s;
+            animation: donar 4s ease-out 0.2s;
 
             @keyframes donar {
                 0% {
                     background-color: $oscuro;
                     color: $secundario;
-                    transform: scale(1.2);
+                    transform: scale(1.1);
 
                 }
 
                 25% {
+                    background-color: $oscuro;
+                    color: $secundario;
+                    transform: scale(1);
+                }
+
+                50% {
                     background-color: $oscuro;
                     color: $secundario;
                     transform: scale(1);
@@ -147,7 +153,7 @@
 
     h3 {
         font-family: 'Lato', sans-serif;
-        font-size: nth($font-size,3);
+        font-size: nth($font-size, 3);
         margin: 0.33em;
     }
 
@@ -195,7 +201,7 @@
 }
 
 .fundadores {
-    background-color:$complemento;
+    background-color: $complemento;
 
     h3 {
         font-family: 'Lato', sans-serif;
@@ -225,7 +231,7 @@
             .card-body p {
                 font-family: 'Lato', sans-serif;
                 color: $claro;
-                font-size: nth($font-size , 5 );
+                font-size: nth($font-size , 5);
             }
         }
     }
@@ -253,9 +259,9 @@
 }
 
 .animales {
-    @include flex-wrap (flex, row, center, wrap);
-    background: rgb(142,202,230);
-background: linear-gradient(180deg, rgba(142,202,230,1) 0%, rgba(2,48,71,1) 100%);
+    @include flex-wrap (flex, row, space-evenly, wrap);
+    background: rgb(142, 202, 230);
+    background: linear-gradient(180deg, rgba(142, 202, 230, 1) 0%, rgba(2, 48, 71, 1) 100%);
     padding-top: 10px;
     padding-bottom: 10px;
 
@@ -269,7 +275,7 @@ background: linear-gradient(180deg, rgba(142,202,230,1) 0%, rgba(2,48,71,1) 100%
 .hashtag {
     h3 {
         font-family: 'Lato', sans-serif;
-        font-size: nth($font-size ,3);
+        font-size: nth($font-size , 3);
         margin: 1em;
     }
 
@@ -278,7 +284,8 @@ background: linear-gradient(180deg, rgba(142,202,230,1) 0%, rgba(2,48,71,1) 100%
         font-size: 1.25rem;
         margin-left: 1.5em;
     }
-    .hashtag-adopta{
+
+    .hashtag-adopta {
         font-family: 'Lato', sans-serif;
         font-size: 1.25rem;
         margin-left: 1.5em;
@@ -287,7 +294,7 @@ background: linear-gradient(180deg, rgba(142,202,230,1) 0%, rgba(2,48,71,1) 100%
 }
 
 .box-adoptar {
-    
+
     @include flex-wrap (flex, row, space-between, wrap);
     width: auto;
     height: 800px;
@@ -296,36 +303,42 @@ background: linear-gradient(180deg, rgba(142,202,230,1) 0%, rgba(2,48,71,1) 100%
     border-radius: 5px;
     gap: 10px;
     background-color: $oscuro;
+
     .card {
         width: 330px;
         height: 700px;
         background-color: $claro;
+
         img {
             width: 330px;
             height: 400px;
         }
+
         .card-body {
             @include flex (flex, column, space-evenly, center);
             text-align: center;
+
             p {
                 font-family: 'Lato', sans-serif;
-                font-size: nth($font-size , 5 );
+                font-size: nth($font-size , 5);
             }
+
             a {
                 text-decoration: none;
                 font-family: 'Lato', sans-serif;
-                font-size: nth($font-size , 5 );
-                background-color:map-get($map:$boton , $key: "bg-boton");
+                font-size: nth($font-size , 5);
+                background-color: map-get($map: $boton , $key: "bg-boton");
                 width: fit-content;
                 border-radius: map-get($map: $card, $key: "border-card");
                 color: map-get($map: $card, $key: "color");
+
                 &:hover {
                     background-color: $principal;
                 }
             }
         }
     }
-    
+
 }
 
 /* Contacto Page */
@@ -335,29 +348,32 @@ background: linear-gradient(180deg, rgba(142,202,230,1) 0%, rgba(2,48,71,1) 100%
     align-items: center;
     margin: 20px;
 
-    div {
-        font-family: 'Lato', sans-serif;
-        font-size: nth($font-size , 5 );
-        color: $oscuro;
-        margin: 20px;
-        width: 40%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
 
-        &:hover {
+        div {
+            font-family: 'Lato', sans-serif;
+            font-size: nth($font-size , 5);
             color: $oscuro;
+            margin: 20px;
+            width: 40%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            &:hover {
+                color: $oscuro;
+            }
         }
     }
 
-}
+
 
 .formulario {
     color: $oscuro;
 
     h3 {
         font-family: 'Lato', sans-serif;
-        font-size: nth($font-size , 3 );
+        font-size: nth($font-size , 3);
     }
 }
+
 @import "./base/responsive";
